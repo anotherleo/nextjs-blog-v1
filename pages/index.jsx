@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import Head from 'next/head'
+import Title from '../components/Title'
 import Post from '../components/Post'
 import { sortByDate } from '../utils'
 
@@ -14,10 +15,16 @@ export default function Home({posts}) {
       </Head>
 
       <div className="posts">
-        <h2>Postagens</h2>
-        {posts.map((post, index) => 
-          <Post key={index} post={post} />
-        )}
+        <div className="container">
+          <Title text="Todas as Postagens" />
+          <div className="row">
+            {posts.map((post, index) =>
+              <div className="col-md-3">
+                <Post key={index} post={post} />
+              </div>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   )

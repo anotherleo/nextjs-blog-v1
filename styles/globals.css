@@ -1,50 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
-
+@font-face {
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bangers/v20/FeVQS0BTqb0h60ACL5k.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/prompt/v10/-W__XJnvUD7dzB26Zw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Prompt', sans-serif;
 }
-
-p {
-  margin: 15px 0;
-  line-height: 1.8;
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-}
-
 img {
   width: 100%;
   border-radius: 10px;
 }
-
-header {
-  background: steelblue;
-  color: #fff;
-  padding: 5px;
-  margin-bottom: 40px;
-}
-
-header a {
-  color: #fff;
-}
-
-.container {
-  max-width: 768px;
-  margin: auto;
-  overflow: auto;
-  padding: 0 10px;
-}
-
 .btn {
-  display: inline-block;
+  margin: 0 auto;
+  display: block;
   background: steelblue;
   color: #fff;
   border: none;
@@ -55,48 +51,21 @@ header a {
   font-size: 15px;
   font-family: inherit;
 }
-
-.btn:focus {
-  outline: none;
-}
-
-.btn:hover {
-  transform: scale(0.98);
-}
-
 .btn-back {
   background: #f4f4f4;
   color: #000;
   margin-bottom: 20px;
 }
-
 .posts {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-top: 30px;
+  background-color: #1f1f1f;
+  padding-bottom: 64px;
 }
-
-.card {
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
 .card-page {
   padding: 15px 30px;
 }
-
 .post-title {
   margin: 10px 0;
 }
-
-.post-date {
-  background: #f4f4f4;
-  margin-bottom: 20px;
-  padding: 3px 10px;
-}
-
 .post-body ul,
 ol {
   font-size: 110%;
@@ -104,14 +73,12 @@ ol {
   font-weight: bold;
   margin: 10px 0;
 }
-
 .post-body pre {
   background: #f4f4f4;
   padding: 20px;
   margin: 20px 0;
   line-height: 2.3;
 }
-
 @media (max-width: 500px) {
   .posts {
     grid-template-columns: 1fr;

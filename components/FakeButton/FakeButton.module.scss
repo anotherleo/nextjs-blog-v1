@@ -1,0 +1,16 @@
+$blue1: #0060AC;
+.fake__button {
+    margin: 0 auto;
+    display: block;
+    background: $blue1;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+    text-align: center;
+}
+  

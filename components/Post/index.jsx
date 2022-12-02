@@ -1,10 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import FakeButton from '../FakeButton'
+import styles from './Post.module.scss'
 
 export default function Post({post}) {
   return (
-    <div className='card'>
+    <div className={styles.card}>
       <Link href={`/blog/${post.slug}`}>
         <Image 
           src={post.frontmatter.cover_image}
@@ -13,11 +15,11 @@ export default function Post({post}) {
           height={200}
         />
         <h3>{post.frontmatter.title}</h3>
-        <div className="post-date">
+        <span>
           Posted on {post.frontmatter.date}
-        </div>
+        </span>
         <p>{post.frontmatter.excerpt}</p>
-        <div className="btn">Ler mais</div>
+        <FakeButton text="Ler mais" />
       </Link>
     </div>
   )

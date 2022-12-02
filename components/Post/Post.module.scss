@@ -1,0 +1,51 @@
+$yellow1: #FFF300;
+$black: rgb(31, 31, 31);
+
+.card {
+    margin-bottom: 30px;
+    background-color: rgb(31, 31, 31);
+    border: 1px solid darkgray;
+    padding: 8px;
+    border-radius: 10px;
+    transition: all linear .2s;
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        padding-bottom: 8px;
+    }
+
+    h3 {
+        font: 500 20px 'Prompt';
+        text-align: center;
+        color: white;
+    }
+
+    span {
+        padding-bottom: 8px;
+        display: block;
+        font: italic 400 14px 'Prompt';
+        color: gray;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        color: white;
+        font: 400 16px 'Prompt';
+    }
+
+    &:hover {
+        background-color: $yellow1;
+        cursor: pointer;
+        
+        h3,
+        p {
+            color: black;
+        }
+
+        
+    }
+}
